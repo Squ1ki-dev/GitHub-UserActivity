@@ -4,7 +4,7 @@ GitHub-UserActivity is an solution for the [github-user-activity](https://roadma
 
 # How to run
 Clone the repository:
-<br>`git clone git@github.com:Lcs-ns/GithubUserActivityCLI.git`<br />
+<br>`git clone https://github.com/Squ1ki-dev/GitHub-UserActivity.git`<br />
 <br>Go into the program's folder: <br />
 `cd src/`
 <br>And run it:<br />
