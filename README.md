@@ -4,10 +4,10 @@ GitHub-UserActivity is an solution for the [github-user-activity](https://roadma
 
 # How to run
 Clone the repository:
-<br>`git clone https://github.com/Squ1ki-dev/GitHub-UserActivity.git`<br />
-<br>Go into the program's folder: <br />
+<br>`git clone https://github.com/Squ1ki-dev/GitHub-UserActivity.git`<br/>
+Go into the program's folder:<br/>
 `cd src/`
-<br>And run it:<br />
+<br>And run it:<br/>
 `java github-activity <username>`
 
 Enter the username whose public activity you want to view.
