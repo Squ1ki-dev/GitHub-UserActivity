@@ -1,8 +1,14 @@
 package org.activity.service;
 
+import org.constants.Constants;
+
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class UserInputHandler {
+    private final Pattern pattern = Pattern.compile(Constants.COMMAND);
+
     private final Scanner scanner = new Scanner(System.in);
 
     public String getUsername(String username) {
@@ -10,8 +16,9 @@ public class UserInputHandler {
             System.out.println("Usage: github-activity <username>");
             String input = scanner.nextLine().trim();
 
-            if (input.matches("^github-activity\\s+([a-zA-Z0-9_]{3,15})$")) {
-                username = input.split("\\s+")[1];
+            Matcher matcher = pattern.matcher(input);
+            if (matcher.matches()) {
+                username = matcher.group(1);
             } else {
                 System.out.println("Invalid input. Please use the format 'github-activity <username>'.");
             }
